@@ -1,4 +1,5 @@
-document.getElementById("complete-btn-1").addEventListener('click', function(){
+document.getElementById("complete-btn-1").addEventListener('click', function(event){
+    alert("Board Updated Successfully ! ");
     const currentIncreased =document.getElementById("increase-number");
     const currentAssigned =document.getElementById("assigned");
     currentAssigned.innerText = 5; 
@@ -7,16 +8,21 @@ document.getElementById("complete-btn-1").addEventListener('click', function(){
     const newIncreased =currentIncreased.innerText;
     const title =document.getElementById('title-1').innerText;
 const history = document.getElementById('history');
+const d =new Date();
 const p= document.createElement("p");
 p.innerText = `
-You have completed the task ${title} at 1:26:53 AM. 
+You have completed the task ${title} at ${d}. 
 
 
 `
 history.appendChild(p);
+
+this.disabled =true;
+
 })
 
 document.getElementById("complete-btn-2").addEventListener('click', function() {
+
     const currentIncreased =document.getElementById("increase-number");
     const currentAssigned =document.getElementById("assigned");
     currentAssigned.innerText = 4; 
@@ -25,13 +31,16 @@ document.getElementById("complete-btn-2").addEventListener('click', function() {
     const newIncreased =currentIncreased.innerText;
     const title =document.getElementById('title-2').innerText;
 const history = document.getElementById('history');
+const d =new Date();
 const p= document.createElement("p");
 p.innerText = `
-You have completed the task ${title} at 1:26:53 AM. 
+You have completed the task ${title} at ${d}. 
 
 
 `
 history.appendChild(p);
+
+this.disabled =true;
 })   
 
 document.getElementById("complete-btn-3").addEventListener('click', function() {
@@ -41,13 +50,16 @@ document.getElementById("complete-btn-3").addEventListener('click', function() {
     currentIncreased.innerText = 26;
     const title =document.getElementById('title-3').innerText;
     const history = document.getElementById('history');
+    const d =new Date();
     const p= document.createElement("p");
     p.innerText = `
-    You have completed the task ${title} at 1:26:53 AM. 
+    You have completed the task ${title} at ${d}. 
     
     
     `
     history.appendChild(p);
+
+    this.disabled =true;
 })   
 
 document.getElementById("complete-btn-4").addEventListener('click', function() {
@@ -57,13 +69,17 @@ document.getElementById("complete-btn-4").addEventListener('click', function() {
     currentIncreased.innerText = 27;
     const title =document.getElementById('title-4').innerText;
     const history = document.getElementById('history');
+    const d =new Date();
+    
     const p= document.createElement("p");
     p.innerText = `
-    You have completed the task ${title} at 1:26:53 AM. 
+    You have completed the task ${title} at ${d}. 
     
     
     `
     history.appendChild(p);
+
+    this.disabled =true;
 })   
 
 
@@ -74,13 +90,16 @@ document.getElementById("complete-btn-5").addEventListener('click', function() {
     currentIncreased.innerText = 28;
     const title =document.getElementById('title-5').innerText;
     const history = document.getElementById('history');
+    const d =new Date();
     const p= document.createElement("p");
     p.innerText = `
-    You have completed the task ${title} at 1:26:53 AM. 
+    You have completed the task ${title} at ${d}. 
     
     
     `
     history.appendChild(p);
+
+    this.disabled =true;
 })   
 
 
@@ -91,13 +110,16 @@ document.getElementById("complete-btn-6").addEventListener('click', function() {
     currentIncreased.innerText = 27;
     const title =document.getElementById('title-6').innerText;
     const history = document.getElementById('history');
+    const d =new Date();
     const p= document.createElement("p");
     p.innerText = `
-    You have completed the task ${title} at 1:26:53 AM. 
+    You have completed the task ${title} at ${d}. 
     
     
     `
     history.appendChild(p);
+
+    this.disabled =true;
 })   
 
 document.getElementById("clear").addEventListener('click',function(){
