@@ -20,7 +20,7 @@
               <div class="">
                 <div class="flex space-x-2">
                   <div >
-                    <button class="btn bg-blue-700 text-white font-semibold font white">Back to Desk</button>
+                    <button onclick="GoBack()" id="go-back" class="btn bg-blue-700 text-white font-semibold font white">Back to Desk</button>
                   </div>
                 </div>
                </div>
@@ -37,22 +37,29 @@
             <input type="radio" name="my-accordion-1" />
             <div class="collapse-title font-semibold"> Question-1: What are the different ways to select an element in the DOM?
             </div>
-            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+            <div class="collapse-content text-sm">The meaning of DOM is Document Object Model.There are so many ways to select elements.Most commonly used methods is : getElementById(): When you know the unique id of an element. 
+              1.getElementsByClassName(): When selecting elements by class.
+              2.getElementsByTagName(): When selecting elements by their tag name.
+              3.querySelector(): To select an element with a classList.
+              4.querySelectorAll(): To select multiple elements to find a type of elements.
+              6.parentNode / childNodes: To navigate through the DOM tree from a given element.</div>
           </div>
           <div class="collapse bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-1" />
             <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
-            <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+            <div class="collapse-content text-sm">1. innerText: When you need the visible, styled, and formatted text inside an element, and you need to respect CSS styles.
+              2. innerHTML: When you need to get or set HTML content (including HTML tags) inside an element. Be careful with user-generated content to avoid security risks.
+              3. textContent: When we need the main text inside an element, .</div>
           </div>
           <div class="collapse bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-1" checked="checked" />
             <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
-            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+            <div class="collapse-content text-sm">A technique where i do attach a single event listener list to a parent element. It is a pattern that efficiently handles events.</div>
           </div>
           <div class="collapse bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-1" />
             <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
-            <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+            <div class="collapse-content text-sm">.</div>
           </div>
           <div class="collapse bg-base-100 border border-base-300">
             <input type="radio" name="my-accordion-1" />
@@ -62,6 +69,13 @@
           
           
     </main>
-   <script src=""></script> 
+  <script>
+    function GoBack(){
+      window.location.href="./index.html";
+    }
+  </script> 
+    <script src="./js/next.js"></script>
+   
+    
 </body>
 </html>
