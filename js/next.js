@@ -1,4 +1,4 @@
-const colors =[ "bg-blue-400", "bg-green-200", "bg-red-300"];
+const colors =[ "bg-blue-200", "bg-green-200", "bg-red-300","bg-cyan-200"];
 let i = 0;
 
 document.getElementById("theme")
